@@ -3,9 +3,15 @@
   "name": "Logo Switcher",
   "description": "Switch logo",
   "version": "0.0.1",
+  "homepage_url": "https://github.com/2chanhaeng/logo-switcher",
+  "icons": {
+    "16": "twitter-logo.png",
+    "48": "twitter-logo.png",
+    "128": "twitter-logo.png"
+  },
   "content_scripts": [
     {
-      "matches": ["*://twitter.com/*", "*://twitter.com/"],
+      "matches": ["*://twitter.com/*", "*://*.twitter.com/*"],
       "css": ["./style.css"],
       "run_at": "document_start"
     }
